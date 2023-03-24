@@ -1,0 +1,51 @@
+#shoppingSection{
+    //background-color: rgba(128, 128, 128,.5);
+    background-color: #e2e2e2;
+    padding:3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.shopping{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &_search{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        input{
+            padding:1rem;
+            border:none;
+            background-color: white;
+        }
+        button{
+            background-color: rgb(14, 10, 204);
+            color:white;
+            padding:1rem;
+            border:none;
+            width:fit-content;
+        }
+
+    }
+    &_filter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        label{
+            color:white;
+        }
+    }
+    &_filterOutput{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button{
+            background-color: rgb(14, 10, 204);
+            color:white;
+            padding:1rem;
+            border:none;
+            width:fit-content;
+        }
+
+    }
+}

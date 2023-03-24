@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/582e806265.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/logo1-free-img.png" alt="logo">
+        <nav class="menu">
+            <ul class="menu_ul">
+                <li class="menu_li"><a href="../index.html">Home</a></li>
+                <li class="menu_li active"><a href="shop.html">Shop</a></li>
+                <li class="menu_li"><a href="about.html">About</a></li>
+                <li class="menu_li"><a href="contact.html">Contact</a></li>
+                <li class="menu_li"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="singleproduct">
+        <div class="product">
+            <div class="image-container">
+                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe3-400x400.jpg" alt="Image" class="zoom-image">
+                <div class="magnify">
+                    <!--<span class="magnify-icon"></span>-->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>              
+            <div class="product_data">
+                <p class="dull">Home / Men / DNK Yellow Shoes</p>
+                <a href="">Men</a>
+                <h1>DNK Yellow Shoes</h1>
+                <p><span class="product_line">$150.00</span><span class="thick">$120.00</span>+ Free Shipping</p>
+                <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.</p>
+                <div class="product_add">
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="100" step="1">
+                    <button class="product_cart">add to cart</button>
+                </div>
+                <hr class="product_highlight">
+                <p>Category:<a href="" class="product_noline">Men</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="descriptionSection">
+        <div class="description">
+            <div class="operations">
+                <button onclick="showdescription()"class="btn btn-active" data-tab="description">description</button>
+                <button onclick="showreview()" class="btn " data-tab="review">review</button>
+            </div>
+            <div id="description" class="tabcontent tabcontent--1 tabcontent-active" >
+                <div class="decription_container description_container--1">
+                    <h2>Product description</h2>
+                    <br>
+                    <p>Since it's creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <br>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <br>
+                </div>
+                <div class="decription_container description_container--2">
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-about-01.jpg" alt="image">
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-about-04.jpg" alt="imaage">
+                </div>
+                <div class="decription_container description_container--3">
+                    <img src="https://images.unsplash.com/photo-1614676471928-2ed0ad1061a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdpbnRlciUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="image">
+                    <div class="description_data">
+                        <div>
+                            <h3>Ut enim ad minim</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <div>
+                            <h3>Quis nostrud</h3>
+                            <p>Sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                        <div>
+                            <h3>Duis aute irure</h3>
+                            <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="decription_container description_container--4">
+                    <div>
+                        <h3>More about the product</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1643226355549-a81ce9a8899f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="image">
+                </div>
+            </div>
+            <div id="review" class="tabcontent tabcontent--2" style="display:none;">
+                review
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <h3>SALE UP TO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS.</h3>
+        <br><br>
+        <hr>
+        <div class="newsletter">
+            <div class="box1">
+                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/logo1-free-img.png"alt="logo">
+                <h3>The best look anytime, anywhere.</h3>
+            </div>
+            <div class="box2">
+                <h4>For Her</h4>
+                <ul>
+                    <li>Women Jeans</li>
+                    <li>Tops and Shirts</li>
+                    <li>Women Jackets</li>
+                    <li>Heels and Flats</li>
+                    <li>Women accessories</li>
+                </ul>
+            </div>
+            <div class="box3">
+                <h4>For Him</h4>
+                <ul>
+                    <li>Men Jeans</li>
+                    <li>Men Shirts</li>
+                    <li>Men Jackets</li>
+                    <li>Men shoes</li>
+                    <li>Men accessories</li>
+                </ul>
+            </div>
+            <div class="box4">
+                <h4>Subscribe</h4>
+                <input type="email" id="email" placeholder="Your Email Address">
+                <input type="submit" id="Subscribe" placeholder="Subscribe">
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <div class="copyright">
+            <h5>Copyright &copy; 2023 Brandstore. Powered by Brandstore.</h5>
+            <ul class="social_icons">
+                <li class="social_item"><a href=""><i class="fa-brands fa-google"></i></a></li>
+                <li class="social_item"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="social_item"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="social_item"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="social_item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="../js/shop.js"></script>
+    <script src="../js/singleProduct.js"></script>
+</body>
+</html>
