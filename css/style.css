@@ -213,7 +213,7 @@
     background-color: black;
     color: white; }
 
-#singleproduct, #descriptionSection {
+#single, #descriptionSection {
   background-color: #e2e2e2; }
 
 .product {
@@ -233,7 +233,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-left: 2rem; }
     .product_data p.dull {
       color: grey; }
     .product_data a {
@@ -284,7 +285,7 @@
 
 .image-container {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 70vh;
   overflow: hidden; }
 
@@ -346,15 +347,21 @@
   width: 30%;
   margin-left: 7%; }
 
-.btn {
+.operations_tab {
   color: black;
   background-color: #e2e2e2;
   border: none;
-  padding: 1rem; }
+  padding: 1rem;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.9); }
 
-.btn-active {
+.operations_tab-active {
   color: green;
   border-top: 1px solid green; }
+
+.tabcontent-active {
+  display: block; }
 
 .description_container--1 {
   width: 80%;
@@ -402,28 +409,82 @@
     .description_data div h3, .description_data div p {
       line-height: 2; }
 
-#shoppingSection {
-  background-color: #e2e2e2;
-  padding: 3rem;
+#review {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; }
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem; }
+  #review p {
+    margin: 2rem 0; }
+  #review form {
+    width: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.6); }
+
+.reviewForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem; }
+  .reviewForm div.form_head {
+    font-size: 27px;
+    margin-bottom: 1rem; }
+  .reviewForm input {
+    background-color: white;
+    border: none;
+    padding: 1rem;
+    margin: 1rem 0; }
+  .reviewForm textarea {
+    padding: 1rem;
+    border: none;
+    margin: 1rem 0;
+    background-color: white;
+    width: 100%; }
+  .reviewForm input[type="submit"] {
+    width: fit-content;
+    color: white;
+    background-color: #0084d6;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 20px; }
+  .reviewForm div.review_name {
+    display: flex;
+    justify-content: space-between; }
+    .reviewForm div.review_name div {
+      display: flex;
+      flex-direction: column;
+      width: 48%; }
+
+.rating {
+  display: inline-block;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 1rem; }
+  .rating:hover, .rating:hover ~ .rating {
+    color: black; }
+
+#shoppingSection {
+  background-color: #eeeeee;
+  padding: 6rem;
+  display: flex;
+  margin: 0 auto; }
 
 .shopping {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  width: 20%; }
   .shopping_search {
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    align-items: center; }
     .shopping_search input {
-      padding: 1rem;
+      padding: .5rem;
       border: none;
       background-color: white; }
     .shopping_search button {
-      background-color: #0e0acc;
+      background-color: #0084d6;
       color: white;
-      padding: 1rem;
+      padding: .5rem;
       border: none;
       width: fit-content; }
   .shopping_filter {
@@ -431,21 +492,108 @@
     flex-direction: column;
     justify-content: space-between; }
     .shopping_filter label {
-      color: white; }
+      margin: 1rem 0 1rem 0; }
   .shopping_filterOutput {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0; }
     .shopping_filterOutput button {
-      background-color: #0e0acc;
+      background-color: #0084d6;
       color: white;
-      padding: 1rem;
+      padding: .5rem;
       border: none;
-      width: fit-content; }
+      width: fit-content;
+      font-weight: 700; }
+
+.category {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10rem; }
+  .category h2 {
+    font-weight: 400; }
+  .category p {
+    display: flex;
+    justify-content: space-between; }
+  .category_link {
+    text-decoration: none;
+    color: black; }
+    .category_link:hover {
+      color: #0084d6; }
+
+.sellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50rem;
+  margin-top: 2rem; }
+  .sellers h2 {
+    font-weight: 400; }
+  .sellers div {
+    display: flex; }
+    .sellers div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .sellers div div p {
+        margin: .5rem; }
+
+.results {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 3rem;
+  margin-left: 3rem; }
+  .results p.dull {
+    color: grey;
+    margin: 1rem 0 2rem 2rem; }
+  .results div.count {
+    margin-left: 2rem; }
+
+.pictures {
+  width: 100%;
+  margin-top: 2rem; }
+  .pictures_image {
+    position: relative; }
+  .pictures_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .pictures_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 27%;
+    list-style-type: none;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
+  .pictures_container {
+    display: flex;
+    flex-direction: column;
+    text-align: start; }
+    .pictures_container a {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+      margin: .5rem 0 .5rem 0; }
+    .pictures_container span {
+      color: grey; }
+    .pictures_container p {
+      margin: .5rem 0 .5rem 0; }
+  .pictures_strike {
+    text-decoration: line-through;
+    text-decoration-color: grey;
+    text-decoration-thickness: 2px;
+    color: grey; }
 
 .about {
-  height: 70vh;
-  background-image: url("https://plus.unsplash.com/premium_photo-1668383209164-16c17a9b1407?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29udmVyc2F0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  height: 90vh;
+  background-image: url("https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -456,7 +604,7 @@
   .about h1 {
     color: white;
     font-size: 100px;
-    padding-top: 20vh;
+    padding-top: 30vh;
     text-align: center; }
 
 .people {

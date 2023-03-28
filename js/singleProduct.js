@@ -1,8 +1,9 @@
 //magnifying button on the image
-const magnifyButton = document.querySelector('.magnify');
-magnifyButton.addEventListener('click', () => {
-  window.open('https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe3-400x400.jpg', '_blank');
-});
+function openImage(button) {
+  const image = button.parentNode.querySelector('img');
+  const imageUrl = image.src;
+  window.open(imageUrl, '_blank');
+}
 //alternating review and decription
 function showdescription() {
     document.getElementById("review").style.display = "none";
@@ -14,14 +15,26 @@ function showreview() {
     document.getElementById("description").style.display = "none";
 }
 
-const tabs = document.querySelectorAll('.btn');
+const tabs = document.querySelectorAll('.operations_tab')
     const tabsContainer = document.querySelector('.operations');
     const tabcontent=document.querySelectorAll('.tabcontent');
     tabsContainer.addEventListener('click', function (e) {
-        const clicked = e.target.closest('.btn');
+        const clicked = e.target.closest('.operations_tab');
         if (!clicked) return;
-        tabs.forEach(t => t.classList.remove('btn-active'));
+        tabs.forEach(t => t.classList.remove('operations_tab-active'));
         tabcontent.forEach(c=>c.classList.remove('tabcontent-active'));
-        clicked.classList.add('btn-active');
+        clicked.classList.add('operations_tab-active');
         document.querySelector(`.tabcontent--${clicked.dataset.tab}`).classList.add('tabcontent-active');
-    }); 
+    });
+//star review
+function setRating(value) {
+  document.getElementById('rating').value = value;
+  const ratings = document.getElementsByClassName('rating');
+  for (let i = 0; i < ratings.length; i++) {
+    if (i < value) {
+      ratings[i].innerHTML = '★';
+    } else {
+      ratings[i].innerHTML = '☆';
+    }
+  }
+}

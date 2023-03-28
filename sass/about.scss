@@ -1,12 +1,12 @@
 //about section styling
 .about{
-    height: 70vh;
+    height: 90vh;
     background-image:/* linear-gradient(
         to right bottom,
         rgba(26, 0, 128, 0.8),
         rgba(144, 222, 238, 0.9)
       ),*/
-      url("https://plus.unsplash.com/premium_photo-1668383209164-16c17a9b1407?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29udmVyc2F0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+      url("https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
       background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -17,7 +17,7 @@
     h1{
         color: white;
         font-size: 100px;
-        padding-top:20vh;
+        padding-top:30vh;
         text-align: center;
     }
 }
