@@ -66,6 +66,9 @@
             font-size: 20px;
             text-decoration: none;
             margin: .5rem 0 .5rem 0;
+            &:hover{
+                color:rgb(0, 132, 214);
+            }
         }
         span{
             color:grey;

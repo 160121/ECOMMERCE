@@ -16,4 +16,3 @@ featureItems.forEach(function(featureItem) {
     cart.style.display='none';
   });
 });
-/*adding items in the cart code*/

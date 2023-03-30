@@ -57,6 +57,8 @@
       font-size: 20px;
       text-decoration: none;
       margin: .5rem 0 .5rem 0; }
+      .features_container a:hover {
+        color: #0084d6; }
     .features_container span {
       color: grey; }
     .features_container p {
@@ -528,7 +530,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 50rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  width: max-content; }
   .sellers h2 {
     font-weight: 400; }
   .sellers div {
@@ -537,15 +540,23 @@
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      .sellers div div a {
+        color: black;
+        text-decoration: none; }
+        .sellers div div a:hover {
+          color: #0084d6; }
       .sellers div div p {
         margin: .5rem; }
+
+.active {
+  display: block; }
 
 .results {
   display: flex;
   flex-direction: column;
   background-color: white;
   padding: 3rem;
-  margin-left: 3rem; }
+  margin-left: 5rem; }
   .results p.dull {
     color: grey;
     margin: 1rem 0 2rem 2rem; }
@@ -569,9 +580,11 @@
     width: 27%;
     list-style-type: none;
     text-decoration: none;
-    margin: auto;
+    margin-right: 3.33%;
     margin-bottom: 2rem;
     margin-top: 2rem; }
+    .pictures_item img {
+      width: 100%; }
   .pictures_container {
     display: flex;
     flex-direction: column;
@@ -581,6 +594,8 @@
       font-size: 20px;
       text-decoration: none;
       margin: .5rem 0 .5rem 0; }
+      .pictures_container a:hover {
+        color: #0084d6; }
     .pictures_container span {
       color: grey; }
     .pictures_container p {
@@ -590,6 +605,18 @@
     text-decoration-color: grey;
     text-decoration-thickness: 2px;
     color: grey; }
+
+.pagination {
+  display: flex; }
+  .pagination button {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 16px;
+    margin: 2rem .5rem;
+    padding: 1rem; }
+    .pagination button.active {
+      color: white;
+      background-color: black; }
 
 .about {
   height: 90vh;
