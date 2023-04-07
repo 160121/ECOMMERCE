@@ -1,0 +1,18 @@
+.cart{
+    width:90%;
+    margin:1rem auto;
+    table{
+        width:100%;
+        border-collapse:collapse;
+        border:1px solid #ccc;
+        th{
+            background-color:#ccc;
+            padding:1rem;
+            text-align:left;
+        }
+        td{
+            padding:1rem;
+            border:1px solid #ccc;
+        }
+    }
+}

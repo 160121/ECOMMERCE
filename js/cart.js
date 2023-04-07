@@ -16,3 +16,9 @@ featureItems.forEach(function(featureItem) {
     cart.style.display='none';
   });
 });
+
+const cartButton=document.querySelectorAll('.product_cart');
+const cartIcon=document.querySelectorAll('.cart_icon');
+cartButton.addEventListener('click',function(e){
+  e.preventDefault();
+});
